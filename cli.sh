@@ -334,7 +334,7 @@ clear;
 ## Download AirMessage
 echo -e "${BYellow}Downloading AirMessage v$AM_VERSION.${Color_Off}";
 cd ~/Downloads;
-# curl -s -o "airmessage.zip" -L "$AM_DOWNLOAD" &> /dev/null;
+curl -s -o "airmessage.zip" -L "$AM_DOWNLOAD" &> /dev/null;
 echo -e "${BGreen}Successfully downloaded AirMessage v$AM_VERSION${Color_Off}";
 
 ## Unzip AirMessage
@@ -344,7 +344,7 @@ echo -e "${BYellow}Moving AirMessage to Applications folder.${Color_Off}";
 echo -e $SUDOPASS | sudo -S rm -rf "/Applications/AirMessage.app" &> /dev/null;
 echo -e $SUDOPASS | sudo -S mv "AirMessage.app" "/Applications/AirMessage.app" &> /dev/null;
 echo -e "${BYellow}Removing AirMessage download.${Color_Off}";
-# rm "airmessage.zip";
+rm "airmessage.zip";
 
 ## Configure AirMessage
 
