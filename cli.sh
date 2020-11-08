@@ -7,7 +7,7 @@
 AM_PASS="cookiesandmilk"; # AirMessage connection password.
 AM_PASS_ENCODED=$(printf "%s" "${AM_PASS}" | base64) # $(base64 <<< $AM_PASS);
 AM_VERSION="0.3.3";
-AM_DOWNLOAD="https://airmessage.org/files/server/server-v$AM_VERSION.zip";
+AM_DOWNLOAD="https://airmessage.org/assets/releases/server/server-v$AM_VERSION.zip";
 AM_SF="1.0"; # Scan Frequency (How long between checking for new messages. In seconds)
 AM_PORT="1359"; # Server Host Port.
 AM_AUTO_UPDATE="true"; # Check for update automatically.
